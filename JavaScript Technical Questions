@@ -53,6 +53,26 @@ The array.map() method returns a new array and the array.forEach() loop does not
 
 
 
+Explain the difference between: function Person(){}, var person = Person(), and var person = new Person()?
 
 
+The first argument is a function called Person, the second argument is assigning the function Person to the variable person and the third argument is creating a new object called person by inheriting the object prototype Person. So the first is a function, the second is a variable and the third is an object. To compare and contrast, the third argument would need an additional  object defined somewhere called Person() in order to create it. It wouldn’t be possible to create a new object based on a prototype object if the prototype didn’t exist.  One example from my personal coding is I needed to create an object with properties in order to feed info from the back end to the front end when I was using Handlebars. I created several objects, all based on the prototype object.
+
+
+Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
+
+In the first argument, you are creating a function called foo.  In the second argument you are assigning a function to the variable foo. To compare and contrast, the first argument is a function and the second is a variable. The first example is similar to creating a website and the second is similar to creating a link to a website.
+
+Explain Function.prototype.bind.
+
+The bind() method creates a new function when it is called that connects the this keyword to a provided value.  It basically helps to avoid calling the global this and be more specific to avoid errors. To compare and contrast, I try not to have too many keys on my key ring to avoid confusion or unneeded keys, where I might get confused about which key is for which lock.  That’s similar to the this keyword which can be calling a global scope or a local scope and which may get the two confused.
+
+What’s the difference between feature detection, feature inference, and using the UA string?
+
+Feature detection is to identify the browser’s capabilities.  Feature Inference is to guess whether the browser has certain features based on feature detection. UA string is a string text of data that each browsers send and has info about the browser’s environment. To compare and contrast, feature detection would be like checking to see if there is milk in the fridge.  Feature inference would be like trying to infer whether we have bread if there is milk in the fridge because  you usually buy milk and bread at the same time.  So you basically are trying to guess if there is bread based on known info. 
+
+
+Explain “hoisting”.
+
+Hoisting is JavaScript’s default behavior of moving declarations to the top of the code body. If a variable is declared with var, its value can be used before it is declared.  For let and const, its value cannot be used before it is declared.
 
