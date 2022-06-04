@@ -1,78 +1,533 @@
+
+
+
+
+.
+
+
+
+
+
 Explain event delegation.
 
 
-This allows specifying an event listener on fewer HTML elements. Instead, it is specified on a parent element and then an event can be called for the child using a .target property.  It can be compared to a file structure on a computer with several folders in it. Each folder has several files, similar to how a single parent element can have multiple children elements with event listeners for each. It is basically like book keeping. If you have a parent div with 50 child divs that each require an event listener, that would be a large amount of typing that could be consolidated with an event delegation.  It can also be thought of as minimizing unnecessary coding. 
+
+
+
+
+
+This allows specifying an event listener on fewer HTML elements. Instead, it is specified on a parent element and then an event can be called for the child using a .target property.  It can be compared to a file structure on a computer with several folders in it. Each folder has several files, similar to how a single parent element can have multiple children elements with event listeners for each. It is basically like book keeping. If you have a parent div with 50 child divs that each require an event listener, that would be a large amount of typing that could be consolidated with an event delegation.  It can also be thought of as minimizing unnecessary coding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 Explain how this works in JavaScript.
 
 
+
+
+
+
+
+
+
+
+
+
 In an object, this refers to the object, in a function, this refers to the global object, alone, this refers to the global object.  There are generally variables within an object called properties and this can refer to those properties in an object. To compare and contrast, think of the this as a key card for an employee to get into their building of employment.  The building can be thought of as the object that the this (key card) belongs to and each building has several employees in it.  Another example is an object called car may have the properties mileage, color and weight. If you use this.weight, it refers to the property of weight in that object. The difference between ES5 and ES6 for the this keyword is that in ES5, the word “that” was part of the functionality of this and it was removed in ES6.
+
+
+
+
+
+
+
+
+
+
 
 
 Can you give an example of one of the ways that working with this has changed in ES6?
 
 
+
+
+
+
+
+
+
+
+
+
 The difference between ES5 and ES6 for the this keyword is that in ES5, the word “that” was part of the functionality of this and it was removed in ES6. This change simplified the functionality, removing “that” keyword. To compare and contrast, take the example of a building that is locked with two different keys.  Each time you need to lock or unlock the building, you need both keys, which takes more time and resources. By transitioning from ES5 to ES6 for “this” keyword, it would be similar to changing the locks so that you only need one key to get in. In the coding, you basically would remove one line of coding. This makes the code simpler and easier to understand.
+
+
+
+
+
+
+
+
+
+
 
 
 Explain how prototypal inheritance works.
 
+
+
+
+
+
+
 Prototypal inheritance is when an object inherits certain aspects of a prototype object, like methods/functions or state variables. This reduces the amount of coding necessary and allows for reusable object properties that are common.. To compare and contrast, prototypal inheritance is similar to the way a Toyota might be designed across different models.  They may use the same parts for several components which reduces the cost of making each component custom and also allows for using a design that’s been tested thoroughly.  One example from my own coding is through the use of an array, which uses prototypal  inheritance to inherit properties of a prototype object. I’ve also created several objects in a code that has the same properties but different values for that property, where the properties are inherited.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 What’s the difference between a variable that is: null, undefined or undeclared?
 
 
+
+
+
+
+
+
+
+
+
+
 Null means the intentional absence of a value for a variable and is treated as a false boolean value. Undefined means a variable has not been defined or not declared.  Undeclared means a variable was not declared using var, cont or let.  To compare and contrast, in the case of a locker, null would be like a locker with nothing in it. Undefined would be like a locker that has not been created yet. Undeclared would be like a locker that has not been assigned to anyone yet.   A personal example of an undeclared variable that I’ve run into in coding is if I use a variable that I have not declared with let, var or const.  However, these types of errors are generally easily found and corrected.
+
+
+
+
+
+
+
+
+
+
 
 
 How would you go about checking for any of these states?
 
 
-For null, you can check if a variable is false and also === null. For undefined you can check if a variable typeof(some-variable)=== “undefined”.  For undeclared, you will get an error in your code and it will be unable to compile, saying “is not defined”. 
+
+
+
+
+
+
+
+
+
+
+For null, you can check if a variable is false and also === null. For undefined you can check if a variable typeof(some-variable)=== “undefined”.  For undeclared, you will get an error in your code and it will be unable to compile, saying “is not defined”.
+
+
+
+
+
+
+
+
+
+
 
 
 What is a closure, and how/why would you use one?
 
+
+
+
+
+
+
 A closure is a function within a function, where the inner function exposes the outer functions variables showing its lexical scope.  The inner function has access to the outer function’s variables. One use of closures is for data privacy because they describe what has access to what data (i.e. the inner function has access to the variables of the outer function). To compare and contrast, if you were working on a website’s security, you wouldn’t want any part of the code access to the variable values of any other part and you would want to control access as best  you could.  It would probably be a good idea to avoid creating a global variable that any part of the code can see or change because that would not be good for security. For example, it may not be a good idea to create a global variable for user id because that could be changed anywhere in the code and this wouldn’t give  you a good control of  it’s ability to be updated..  Updating a variable like user id is related to security and greater care should be taken for it.
+
+
+
+
+
+
+
+
+
+
 
 
 What language constructions do you use for iterating over object properties and array items?
 
 
+
+
+
+
+
+
+
+
+
+
 I tend to  use a for loop for iterating over an array.   I’ve grown accustomed to its syntax. For an array, I also use the .length option to find the end of the array. To compare and contrast to a while loop, the for loop has a more clearly defined end point. A while loop goes on until a criteria is reached so it is easier to have an infinite loop for a while loop, which causes problems. For example, a for loop will  only loop over the indices in the array and will stop at the end.  A while loop will continue to loop until the criteria is reached and if there is a bug or an issue with the logic, an infinite loop can be easily created accidentally
+
+
+
+
+
+
+
+
+
+
 
 
 Can you describe the main difference between the Array.forEach() loop and Array.map() methods and why you would pick one versus the other?
 
 
-The array.map() method returns a new array and the array.forEach() loop does not. The array.forEach() executes a function for each element of an array. The array.map() method will take an existing array, and transform it and return a new array. To compare and contrast, the array.forEach() may console.log something for each array element. But the array.map() may return a modification of the existing array, such as squaring the array value and returning the new array. For example, forEach might add each element of an array to database. 
+
+
+
+
+
+
+
+
+
+
+The array.map() method returns a new array and the array.forEach() loop does not. The array.forEach() executes a function for each element of an array. The array.map() method will take an existing array, and transform it and return a new array. To compare and contrast, the array.forEach() may console.log something for each array element. But the array.map() may return a modification of the existing array, such as squaring the array value and returning the new array. For example, forEach might add each element of an array to database.
+
+
+
+
+
+
+
+What’s a typical use case for anonymous functions?
+
+Anonymous functions are functions that are not assigned a name.  They are function expressions rather than the regular function declaration. Because they are function expressions, some use cases would be to assign functions to variables,object properties or pass them as arguments to other functions. To compare and contrast, because they are function expressions, they are more flexible than the regular function declarations. Another example of a use case for an anonymous  function is an immediately invokable function expression  that invokes the function immediately.
+
+
+
+
+What’s the difference between host objects and native objects?
+
+Native objects are objects that have the entirety of their definitions within itself.  Host  objects  are objects that require the Dom  environment to run properly. To compare and contrast, a host object would  be similar to trying to predict the weather because the prediction depends heavily on the overall environment.  A native object would be similar to taking  the temperature outside because  it is fully defined  within itself.  An example of a native object would be Math because it is fully defined within itself.  An example of a host object would be querySelectorAll because it depends on the Dom.
+
 
 
 
 Explain the difference between: function Person(){}, var person = Person(), and var person = new Person()?
 
 
+
+
+
+
+
+
+
+
+
+
 The first argument is a function called Person, the second argument is assigning the function Person to the variable person and the third argument is creating a new object called person by inheriting the object prototype Person. So the first is a function, the second is a variable and the third is an object. To compare and contrast, the third argument would need an additional  object defined somewhere called Person() in order to create it. It wouldn’t be possible to create a new object based on a prototype object if the prototype didn’t exist.  One example from my personal coding is I needed to create an object with properties in order to feed info from the back end to the front end when I was using Handlebars. I created several objects, all based on the prototype object.
+
+
+
+
+
+
+
+
+
+
 
 
 Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
 
+
+
+
+
+
+
 In the first argument, you are creating a function called foo.  In the second argument you are assigning a function to the variable foo. To compare and contrast, the first argument is a function and the second is a variable. The first example is similar to creating a website and the second is similar to creating a link to a website.
+
+
+
+
+
+
+
+
+
+Can you explain what Function.call and Function.apply do? What’s the notable difference between the two?
+
+Function.call would be a function call that requires the arguments  of the function to be explicitly labeled separated by a comma.  Function.apply would allow the use of an array to specify the function arguments.  To compare and contrast, call would be similar to mailing out individual documents to a person in separate envelopes which can become cumbersome.  Whereas apply would be mailing all the documents in a single envelope with partitions to separate them which would be more convenient.
+
+
+
+
 
 Explain Function.prototype.bind.
 
+
+
+
+
+
+
 The bind() method creates a new function when it is called that connects the this keyword to a provided value.  It basically helps to avoid calling the global this and be more specific to avoid errors. To compare and contrast, I try not to have too many keys on my key ring to avoid confusion or unneeded keys, where I might get confused about which key is for which lock.  That’s similar to the this keyword which can be calling a global scope or a local scope and which may get the two confused.
+
+
+
+
+
+
 
 What’s the difference between feature detection, feature inference, and using the UA string?
 
-Feature detection is to identify the browser’s capabilities.  Feature Inference is to guess whether the browser has certain features based on feature detection. UA string is a string text of data that each browsers send and has info about the browser’s environment. To compare and contrast, feature detection would be like checking to see if there is milk in the fridge.  Feature inference would be like trying to infer whether we have bread if there is milk in the fridge because  you usually buy milk and bread at the same time.  So you basically are trying to guess if there is bread based on known info. 
+
+
+
+
+
+
+Feature detection is to identify the browser’s capabilities.  Feature Inference is to guess whether the browser has certain features based on feature detection. UA string is a string text of data that each browsers send and has info about the browser’s environment. To compare and contrast, feature detection would be like checking to see if there is milk in the fridge.  Feature inference would be like trying to infer whether we have bread if there is milk in the fridge because  you usually buy milk and bread at the same time.  So you basically are trying to guess if there is bread based on known info.
+
+
+
+
+
+
+
+
+
+
 
 
 Explain “hoisting”.
 
+
+
+
+
+
+
 Hoisting is JavaScript’s default behavior of moving declarations to the top of the code body. If a variable is declared with var, its value can be used before it is declared.  For let and const, its value cannot be used before it is declared.
 
+
+
+
+
+
+Describe event bubbling.
+
+Event bubbling is when the inner most nested html element can be clicked and it travels up the dom hierarchy  to the parent that  has an event listener and is activated. If you click on the innermost element, whatever action happens for that element is what will be rendered or triggered by  its parent event listener.  To compare and contrast, if a child in a family does not have a car and needs to get somewhere, they can borrow their parent’s car. Another example would be like scuba divers where a diver at 200 feet could signal to a diver at 100 feet that there is a problem with oxygen.  
+
+
+
+Describe event capturing.
+
+
+Event capturing is the event starts at the parent element and bubbles down to the inner most target element.  It is the opposite of event bubbling because it travels the dom in the  opposite way. To compare and contrast, it is like a father asking his 11 year old son’s math teacher for help  with Algebra for a client at work.  Another example  would be where a scuba diver at 100 feet signals to a diver at 200 feet that they are running out of oxygen.
+
+
+
+What’s the difference between an “attribute” and a “property”?
+
+
+Attributes are defined in HTML and are used to customize a tag. Properties are defined in the rendered Dom and can be manipulated by Dom manipulation using things like, document.getElementById().  To compare and contrast, attributes are like the built in functionality of a Cad software,such as Extrude, which are predefined.  Properties would be like the actions a CAD designer takes to make his drawing work if he runs into an issue, because it changes with time.  An example from a group  project that was done in my coding bootcamp similar to properties was to create Dom elements based on the number of events with a given criteria, which would be dynamic and change with input.  An example of an attribute would be defining the CSS on an element.
+
+
+What are the pros and cons of extending built-in JavaScript objects?
+
+A pro of extending built-in JavaScript objects is you get to expand on an object’s functionality  by adding useful methods. One con is that it is possible that a future version of JavaScript will create an extension with the same name which would cause a conflict. To compare and contrast, the pro would be similar to creating your own flavor of ice cream that  uses different existing flavors. The con would be similar to using a name for a variable in Javascript that is already a defined Javascript object, whereby there would be  a conflict.
+
+
+What is the difference between == and ===?
+
+== transforms the operands,  converting a string to a number if necessary. === does not transform the operands. To compare and contrast, == would be like trying to compare a goat and a cat and show they are both animals.  === would say that a goat is not the same as a cat.
+
+
+Explain the same-origin policy with regards to JavaScript.
+
+It is a safety  mechanism that restricts how a script loaded from one origin can interact with a script from a different origin. I protects against hackers trying to compromise a website.  To compare and contrast, it would be similar to checking the badge of an employee to prove that they work for the company and have the same company origin. If the person does not  have a badge, protective measures can be taken to avoid the danger  of the  person compromising confidentiality.
+
+Why is it called a Ternary operator, what does the word “Ternary” indicate?
+Ternary means broken into threes. It is called a ternary operator  because there are three portions of it:   the code that comes before the ?, the code that comes between the  ?  and the :, and the code that comes after the :.  The ternary operator is an alternative to an if statement.  To compare and contrast, a ternary operator is similar to someone’s nick name:  a short version of their real name. 
+
+
+
+What is strict mode? What are some of the advantages/disadvantages of using it?
+
+
+Strict mode is more restrictive in what it allows the code to get by with.  For instance, some things will not compile if strict mode is on, that would normally compile if it  was off.  To compare and contrast, it is  like the difference between having a strict parent as compared to a more lenient one.  The stricter parent will not allow some of the things that the  more lenient  parent will.  An example would be that undeclared variables will not compile in strict mode.  But they will compile if strict mode is off.
+
+
+
+What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+
+
+One advantage is it discourages JavaScript anti-patterns, which are poor coding practices.  Another advantageous enables the writing of shorter code by providing syntactic sugar which is doing something in the newer language that can be done in the original language with less code. One disadvantage is it requires a build/compile process because browsers only run JavaScript and your  code will need to be compiled before serving it  to the browser.  Another disadvantage  is most developers are not familiar with these languages and will need to learn it, increasing the time to get them up to speed. To compare and contrast, regarding the advantage of reducing anti-patterns, it is similar to having a procedure written for how to do something like making a pizza at a pizzeria. If the standard is followed, less issues/errors generally occur. Regarding the disadvantage of developers not being familiar with these languages, it is similar to when a pizzeria comes up with a new type of pizza where the employees need to learn how to make it. One example of an anti-patterns would be declaring a large number of global variables, which may be more difficult with the new language. One example of needing developers to learn the new technology  might be developers not being familiar with TypeScript that need to learn it.
+
+
+
+What tools and techniques do you use debugging JavaScript code?
+
+
+I mostly  use console.log statements to find out what the  code is doing.  I also tend to write simple forms of the loops and other constructs like if statements and see if they  work before writing the more detailed code. To compare and contrast, using console.log statements is similar to asking knowledge questions of an employee you’re training to make sure they are understanding what you’re teaching them. Writing a simplified code structure would be similar to building the foundation of a house before adding the plumbing and heating.  For example, I might console.log the value of the sum of two numbers that are added to make sure it is the sum. If I want to have a for loop to loop over an array and hash it into a new form, I might first just make sure that the loop is looping through the entire  array appropriately.
+
+
+Explain the difference between mutable and immutable objects.
+
+
+Immutable objects are objects whose values  can’t be changed once created and mutable objects are values whose values can be changed once created. An example of an immutable object is null.   An example of a mutable object is an array. To compare and contrast, immutable objects are similar to a person’s social security number, which can’t be changed. A mutable object is similar  to someone’s address, which can be changed.
+ 
+
+What is an example of an immutable object in JavaScript?
+
+An example of an immutable object in JavaScript is a primitive type like string.  They  do not have individual identities but the value is in the variable, not the location they are referencing. To compare and contrast, an immutable object is like the difference between something that points to a value in a database, which could be considered mutable, as compared to assigning a value  to something on the fly, which could  be considered immutable.  The value in the database would be mutable because it can be changed and there is  a reference that points to it. The value that can be changed on the fly would be immutable because its value is whatever you assign  to it at the moment and it does not reference something that can be changed in memory. For example, if I have a variable that is a string, if I change its value in the local memory and then have a different value  in its global memory, the value will be different depending on whether you are calling it locally or globally.
+
+
+
+What are the pros and cons of immutability?
+
+
+Some of the pros of immutability are that, because the value of the variable can not be changed, it may be easier to implement security against hackers because they cannot modify the value of a variable.  Another pro may be that, in a function, it would require you to return a new value, also known as a pure function, and pure functions tend to be predictable and easier to debug and test.  Some cons of immutability is that the code can be harder to write and result in poor performance.
+To compare and contrast, the pro of immutability of enhanced security  would be similar to having your fingerprint as a way to gain access to a building because it can’t be changed or falsified. For the con of resulting in poor performance, an contrasting example would be trying to run a marathon while holding a cup  of water because marathons aren’t designed that way and JavaScript was not designed to write immutable code.  For example, it took me awhile to realize that strings were immutable and arrays were mutable. I repeatedly forgot that and tried to modify strings to no avail.
+
+
+
+
+How can you achieve immutability in your own code?
+
+
+I can achieve immutability in my code by using pure functions to return a new object instead of modifying the original object.  It is also possible to achieve immutability by using the const variable declaration which does not allow the variable to be reassigned a new value. To compare and contrast,  using a pure function  to return a new object instead of modifying the original is similar to returning an item to the store that you don’t want and getting a different item that you want. In contrasting the const example, using const is similar to a company not allowing employees to change their username for logging into their system because const does not allow you to reassign a new value to a variable.  For example, in the past, when working with strings, I would need to create a new string based on the  original string. In  this way I would basically return a new string, similar to how a pure function works.
+
+
+
+Explain the difference between synchronous and asynchronous functions.
+
+
+Synchronous functions are functions that get executed in sequence, basically holding up the resources and processing of the  Dom until the function is complete, or not having the function run until the Dom is processed.  Asynchronous  functions are functions that load simultaneously while the Dom is being loaded and do not hold up its processing.  To compare and contrast, synchronous function would be similar to someone not being able to listen to music and clean the house at the same time.  They would need to clean the house first, and then listen to music.  Asynchronous functions would be similar to someone who can listen to music and clean the house at the same time.  For example, I’ve used asynchronous functions to fetch data from the backend so that the processing of the rest of the script is not held up.  I’ve used synchronous functions that wait for the data to be returned from an API before using it with a .then statement.
+
+
+What is event loop?
+
+
+It is an infinite loop that uses a Callback Queue and a Call Stack. When the Callback Queue gets filled with a task, the event loop removes the task based on First In First Out from the Callback Queue and pushes it onto the Call Stack which executes the task. It is designed for handling multiple  tasks. To compare and contrast, an event loop is similar to dominoes where they fall in sequence, one right after the other.  This can also be thought of as synchronous. One example is using a .then in an API call.  The .then tells the program to wait until it completes the previous task before moving to the next one.
+
+
+What is the difference between call stack and task queue?
+
+
+The call stack is a data structure where the items are stacked, one on top of another.  The items in the call stack are run, one after the other. The task que  is a queue based data structure that holds callback functions. The event loop sees if any items are in the task queue, and if there are, it waits for the call stack to empty and then pushes the item from the task queue to the call stack.  To  compare and contrast, the call stack is like plates stacked on top of one another where a plate can be added to the top and removed from the  bottom.  The task queue can be thought of as a waiter that holds dirty  plates and waits until there are no more plates in the stack  and then adds the dirty plates to the stack.  In one of my websites I created a setTimeout function.  When this function is clicked, it gets added to the call stack and a timer starts. Once the timer finishes it pushes the callback function to the task queue and waits until  the call stack empties, after which it pushes the call back function to the call stack for execution.
+
+
+
+What are the differences between variables created using let, var or const?
+
+
+
+All three are  used to declare variables. Var is globally scoped or function locally scoped which means if it is outside of a function, it is a global variable and if it is inside a function it is a local variable.  Let is block scoped (whatever is bound by {}) so if it is declared in a block it is only usable within that block and can be updated but not re-declared. Const declares constant variables and cannot be updated or re-declared. To compare and contrast, var is similar to someone at a party double dipping a dorito because you can re-declare using var.  Let is similar to having a law at a party that says, “No DOUBLE DIPPING!” because let does not allow you to re-declare a variable. Const is like a law at a party that says, “No double dipping and each chip  has its own salsa”, because const maintains constant values and cannot be redeclared.  I’m accustomed to using var in my coding.  But recently I found that this is not best practice so will use let and const going forward.
+
+
+
+What are the differences between ES6 class and ES5 function constructors?
+
+
+There are no class keywords in ES5 but there is in ES6.. ES6 class constructors add functions to their prototype definition whereas ES5 function constructors use the this keyword to use functions.  To compare and contrast, both are used to create objects. They  just have different syntax.
+
+
+Can you offer a use case for the new arrow => function syntax? How does this new syntax differ from other functions?
+
+
+One use case is when a function is simplistic and doesn’t do too much, they would be a good use case.  For instance, to return the product of two numbers.  To compare and contrast, an arrow function is similar to writing something in shorthand because it takes something that would normally  take up a lot more space like a function definition and shortens it. I’ve used arrow functions many times while coding.
+
+
+What advantage is there for using the arrow syntax for a method in a constructor?
+
+Because an arrow function takes its value of “this” from  the lexical scope, it binds “this” to the surrounding code.
+
+
+What is the definition of a higher-order function?
+
+A higher order function is a function that performs operations on other functions. For example, a  function that calls another  function.  To compare and contrast, a higher order function is like a teacher that teaches other teachers. Or a preacher that preaches to other preachers. One way I’ve used a higher order function is to have a function call itself. This was done to enable creating a delay between API calls because there was only an allotted number of calls per minute allowed.
+
+
+Can you give an example for destructuring an object or an array?
+
+
+So if you have an object, person,  that has, within it, a variable called name, you can use destructuring like this: let {name} = person     This pulls out the value of person.name without needing to type person.name.  To compare and contrast, object destructuring is like going into a crowd where you know there is one person named Jim you’ve never met and yelling for Jim to step forward. I’ve used object destructuring in code when importing modules.
+
+
+Can you give an example of generating a string with ES6 Template Literals?
+
+let name = “Jackie”
+
+console.log(`My cousin’s wife is named ${name}`)
+
+This inserts the variable name into the console.log statement through  the use of back ticks ``.
+This is a very useful feature that allows strings to contain variables in a simple way.
+To compare and contrast, using a template literal in a string is similar to 
+
+Can you give an example of a curry function and why this syntax offers an advantage?
+
+
+
+function fakeFunction(param1){ 
+   //do something 
+   return (param2) => { 
+     //do something   
+     return (param3) => { 
+        return finalResult;    
+     }  
+   }
+}
+
+The advantage to a curry function is, instead of taking all the function parameters  at once and executing it at once, it takes a parameter one at a time.  Therefore it does one action, then another, then another.  To compare and contrast, currying is similar to synchronous JavaScript because it does one action after the other. This is done in a sequential manner.  
+
+
+
+What are the benefits of using spread syntax and how is it different from rest syntax?
+
+The benefits of spread syntax are to be able to expand a long object or array using short and simple notation. The rest syntax works in the opposite direction where it collects data and stores it in a single variable.  To compare and contrast, the spread operator  is similar to a folder structure where one small folder holds several other sub folders.  The rest operator is  similar to storing a several thousand rows of data in an Excel file into an array.  I’ve seen spread operators used in frameworks like Redux.
+
+
+
+How can you share code between files?
+
+
+By exporting them at the bottom of each file. Then import them at the   top of the  file where you want to use  it.  To compare and contrast, it is similar to  using a script tag that has a link to Bootstrap in an Html file.  I’ve done this many times in my code where I  export a file and then import it in another file.
+
+Why you might want to create static class members?
