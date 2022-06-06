@@ -1,10 +1,4 @@
 
-HTML Questions
-
-
-
-
-
 
 
 
@@ -23,7 +17,15 @@ What does a doctype do?
 
 
 
-Doctype stands for Document Type Declaration.  It communicates the type and version of HTML used to the web browser. HTML stands for Hyper Text Markup language and is what websites use for displaying what is seen on a webpage. For example, when you go to the Amazon website, what is seen is done using HTML with a series of elements like div or input. Doctype would describe the version of HTML used creating the website. There are several front end frameworks that work in conjunction with JavaScript and HTML to serve the front end and React is one that I’ve used.  I’ve also used Handlebars to create an E-Commerce website.
+Doctype stands for Document Type Declaration.  It communicates the type and 
+version of HTML used to the web browser. HTML stands for Hyper Text Markup
+ language and is what websites use for displaying what is seen on a webpage. For
+ example, when you go to the Amazon website, what is seen is done using HTML with
+ a series of elements like div or input. Doctype would describe the version of
+ HTML used creating the website. There are several front end frameworks that work
+ in conjunction with JavaScript and HTML to serve the front end and React is one
+ that I’ve used.  I’ve also used Handlebars to create an E-Commerce website.
+
 
 
 
@@ -49,7 +51,15 @@ How do you serve a page with content in multiple languages?
 
 
 
-Set the language in the HTML tag for screen readers to access the right language using the lang attribute. This allows the translation of text into the appropriate language. Websites are often used in different countries which have different languages so this is an important feature. It wouldn’t be good if a website designed in English in America was used in China without this convesion. For instance, if I build a website in English and want it to be readable in China, this process would allow the conversion from English to Chinese. This is how websites work that are used in different countries.
+Set the language in the HTML tag for screen readers to access the right language 
+using the lang attribute. This allows the translation of text into the
+ appropriate language. Websites are often used in different countries which have
+ different languages so this is an important feature. It wouldn’t be good if a
+
+ website designed in English in America was used in China without this convesion.
+ For instance, if I build a website in English and want it to be readable in
+ China, this process would allow the conversion from English to Chinese. This is
+ how websites work that are used in different countries.
 
 
 
@@ -85,7 +95,15 @@ What kind of things must you be wary of when design or developing for multilingu
 
 
 
-Be careful of words/sentence length because this can vary substantially in different languages.  This variation can cause text to not appear appropriately, possibly being cut off. For instance, if I have an English sentence that is 20 characters long and I translate that into Danish, it could take  up more space and be longer. This is because different languages take up a different amount of space to say the same thing.  I’ve had issues with text overflowing in a website due to incorrect CSS styling and this would show a similar display. It is important the CSS can be used appropriately for different languages.
+Be careful of words/sentence length because this can vary substantially in
+ different languages.  This variation can cause text to not appear appropriately,
+ possibly being cut off. For instance, if I have an English sentence that is 20
+ characters long and I translate that into Danish, it could take  up more space
+ and be longer. This is because different languages take up a different amount of
+ space to say the same thing.  I’ve had issues with text overflowing in a website
+ due to incorrect CSS styling and this would show a similar display. It is
+ important the CSS can be used appropriately for different languages.
+
 
 
 
@@ -101,7 +119,12 @@ Be careful of words/sentence length because this can vary substantially in diffe
 
 What are data- attributes good for?
 
-Data- attributes are good for adding additional information to an HTML element.  Whatever comes after the data- is like a variable and it can be set equal to a string.  To compare and contrast, it is like a wallet that has extra pockets so additional items can be stored in it.  Or like adding a variable to a piece of code that has additional information.  Some examples might be data-Name = “Helen” for the variable Name to be Helen.  Another example might be data-Address for the variable Address.
+Data- attributes are good for adding additional information to an HTML element.  Whatever
+ comes after the data- is like a variable and it can be set equal to a string.  To compare and
+ contrast, it is like a wallet that has extra pockets so additional items can be stored in it.  Or
+ like adding a variable to a piece of code that has additional information.  Some examples
+ might be data-Name = “Helen” for the variable Name to be Helen.  Another example might be
+ data-Address for the variable Address.
 
 
 
@@ -117,7 +140,13 @@ Consider HTML5 as an open web platform. What are the building blocks of HTML5
 
 
 
-The building blocks of HTML5 are tags, attributes and elements.  An element is made up of a starting tag, ending tag, attribute(s) and content. The HTML building blocks of elements can then be styled using CSS to make it visually appealing.  But the building blocks must be there first. One example of an HTML5 element is a div element that has a tag div, with a possible attribute of class for CSS and content of “Hello World” which would show up on the web page for the user to see. The content is the text that is shown on the website.
+The building blocks of HTML5 are tags, attributes and elements.  An element is
+ made up of a starting tag, ending tag, attribute(s) and content. The HTML
+ building blocks of elements can then be styled using CSS to make it visually
+ appealing.  But the building blocks must be there first. One example of an HTML5
+ element is a div element that has a tag div, with a possible attribute of class
+ for CSS and content of “Hello World” which would show up on the web page for the
+ user to see. The content is the text that is shown on the website.
 
 
 
@@ -143,7 +172,17 @@ Describe the difference between a cookie, sessionStorage and localStorage.
 
 
 
-A cookie allows access to it from both server and client sides while sessionStorage and localStorage are only accessed from the client side. All three use the same type of key-value pair data storage. sessionStorage differs from localStorage where the data in sessionStorage is destroyed after the web browser is closed but the data in localStorage remains even after the browser is closed. For example, a cookie could be sent to the backend server while sessionStorage or localStorage cannot be. Also, if you set a key-value pair in sessionStorage with an Amazon website open and then closed the web page, the key-value pair would vanish but it would persist if it was set using localStorage. I created a web app for a coding quiz that used localStorage which persisted in the browser after the webpage was closed.
+A cookie allows access to it from both server and client sides while
+ sessionStorage and localStorage are only accessed from the client side. All
+ three use the same type of key-value pair data storage. sessionStorage differs
+ from localStorage where the data in sessionStorage is destroyed after the web
+ browser is closed but the data in localStorage remains even after the browser is
+ closed. For example, a cookie could be sent to the backend server while
+ sessionStorage or localStorage cannot be. Also, if you set a key-value pair in
+ sessionStorage with an Amazon website open and then closed the web page, the
+ key-value pair would vanish but it would persist if it was set using
+ localStorage. I created a web app for a coding quiz that used localStorage which
+ persisted in the browser after the webpage was closed.
 
 
 
@@ -156,7 +195,8 @@ A cookie allows access to it from both server and client sides while sessionStor
 
 
 
-Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
+Why is it generally a good idea to position CSS <link>s between <head></head> and
+ JS <script>s just before </body>? Do you know any exceptions?
 
 
 
@@ -169,7 +209,18 @@ Why is it generally a good idea to position CSS <link>s between <head></head> an
 
 
 
-The CSS link should be between <head><head> so that the load initially and the page uses it and processes it correctly. The JS files are placed before the closing of the body so the performance is enhanced and they are loaded after the page loads. One exception to CSS is if an additional styling is used like bootstrap. In that case it may be a good idea to place the bootstrap link before the css link. For example, if bootstrap styles text with a blue color but your css link styles it with green, depending on which link you place first, it will render differently.  Another reason for putting JS scripts at the end of the page is if there are DOM manipulation in the script, it would be important for the web page to load first before executing DOM manipulation. If you try to manipulate a DOM element that isn’t there but the JS script expects it, this would probably cause unexpected behavior.
+The CSS link should be between <head><head> so that the load initially and the
+ page uses it and processes it correctly. The JS files are placed before the
+ closing of the body so the performance is enhanced and they are loaded after the
+ page loads. One exception to CSS is if an additional styling is used like
+ bootstrap. In that case it may be a good idea to place the bootstrap link before
+ the css link. For example, if bootstrap styles text with a blue color but your
+ css link styles it with green, depending on which link you place first, it will
+ render differently.  Another reason for putting JS scripts at the end of the
+ page is if there are DOM manipulation in the script, it would be important for
+ the web page to load first before executing DOM manipulation. If you try to
+ manipulate a DOM element that isn’t there but the JS script expects it, this
+ would probably cause unexpected behavior.
 
 
 
@@ -195,7 +246,13 @@ What is progressive rendering?
 
 
 
-Progressive rendering is a technique to render content for display quickly. It used to be used before broadband came around. One example is lazy loading where an image is loaded just as it starts to come into view.  This would be like in Facebook, as you scroll down the page, the images load once you get to that image in the scroll.  I’ve been on a website that uses lazy loading and can see the images render just in time as I scroll down the page. It saves resources and load time.
+Progressive rendering is a technique to render content for display quickly. It
+ used to be used before broadband came around. One example is lazy loading where
+ an image is loaded just as it starts to come into view.  This would be like in
+ Facebook, as you scroll down the page, the images load once you get to that
+ image in the scroll.  I’ve been on a website that uses lazy loading and can see
+ the images render just in time as I scroll down the page. It saves resources and
+ load time.
 
 
 
@@ -221,7 +278,13 @@ Why you would use a srcset attribute in an image tag? Explain the process the br
 
 
 
-You would use this when you want to change the image you send to a user depending on the size of their screen. For example, a different image would be sent to a cell phone than would be sent to a laptop. If you have an image that has a lot of detail, it might not show up that great on a cell  phone so it may  only be limited to larger screen sizes. The srcset allows you to define a list of differently sized versions of the same image and the browser makes the decision of which image to use.
+You would use this when you want to change the image you send to a user depending
+ on the size of their screen. For example, a different image would be sent to a
+ cell phone than would be sent to a laptop. If you have an image that has a lot
+ of detail, it might not show up that great on a cell  phone so it may  only be
+ limited to larger screen sizes. The srcset allows you to define a list of
+ differently sized versions of the same image and the browser makes the decision
+ of which image to use.
 
 
 
@@ -234,4 +297,16 @@ You would use this when you want to change the image you send to a user dependin
 
 Have you used different HTML templating languages before?
 
-Yes, I’ve used React and Handlebars as HTML templating languages.  React was implemented by Facebook to minimize the time it takes a web page to load if a portion of the  page changes.  It only rerenders what changes.  An HTML templating language uses an expression language to insert pieces of content into the rendered html. To compare and contrast, it is similar to a mother bird feeding its baby by chewing up food and spitting it into the baby’s mouth, where the engine takes html and renders it in a certain way.  Another example would be how a teacher can break down the lessons in a complicated math textbook to teach their students. I’ve used Handlebars for an e-commerce website that was a group project in coding bootcamp. I’ve used React for a trucking donations app for matching damaged truck loads to available docks for donation.
+Yes, I’ve used React and Handlebars as HTML templating languages.  React was implemented 
+by Facebook to minimize the time it takes a web page to load if a portion of the  page changes. 
+ It only rerenders what changes.  An HTML templating language uses an expression language
+ to insert pieces of content into the rendered html. To compare and contrast, it is similar to a
+ mother bird feeding its baby by chewing up food and spitting it into the baby’s mouth, where the
+ engine takes html and renders it in a certain way.  Another example would be how a teacher
+ can break down the lessons in a complicated math textbook to teach their students. I’ve used
+ Handlebars for an e-commerce website that was a group project in coding bootcamp. I’ve used
+ React for a trucking donations app for matching damaged truck loads to available docks for
+ donation.
+
+
+
