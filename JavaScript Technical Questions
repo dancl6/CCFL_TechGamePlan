@@ -736,8 +736,14 @@ One use case is when a function is simplistic and doesn’t do too much, they wo
 
 What advantage is there for using the arrow syntax for a method in a constructor?
 
-Because an arrow function takes its value of “this” from  the lexical scope, it binds “this” to the surrounding code.
-
+Because an arrow function takes its value of “this” from  the lexical scope, it binds “this” to the 
+surrounding code. Therefore, the “this” references the surrounding code object properties and the 
+Surrounding function,  function parameters.  To compare and contrast, it is similar to having a social
+ person living in the same community as a non-social person.  The social person is like using an
+ arrow function in a constructor because they have access to their environment because they talk to
+ their neighbors. The regular function would be similar to the non-social person because, even
+ though they may be surrounded with people, they don’t talk to them so they don’t have access to
+ what’s going on around them.
 
 What is the definition of a higher-order function?
 
@@ -766,7 +772,11 @@ console.log(`My cousin’s wife is named ${name}`)
 
 This inserts the variable name into the console.log statement through  the use of back ticks `
 .This is a very useful feature that allows strings to contain variables in a simple way.
-To compare and contrast, using a template literal in a string is similar to 
+To compare and contrast, using a template literal in a string is similar to using a variable in HTML 
+frameworks like React where you use syntax to show it’s a variable and are able to render it to the
+ page. You  can use information from your code and display it how you want.  I’ve used template
+ literals when creating an employee tracker app. I extracted data  from the database and then
+ populated the HTML with it.
 
 Can you give an example of a curry function and why this syntax offers an advantage?
 
@@ -810,4 +820,6 @@ Why you might want to create static class members?
 A static class member prevents new methods from being added to the class.  You cannot call a
  method based on a newly created object. You might want to create a static class member if you do 
  not want your class to be modified or if you do not want the user to have access to its methods
- using a newly created object built with the static class. To compare and contrast, 
+ using a newly created object built with the static class. To compare and contrast, this is similar to how social security numbers cannot be changed.  Their purpose is to identify an individual and if they were able to be easily changed, the ability to identify someone would be more difficult.
+
+
