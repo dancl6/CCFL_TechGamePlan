@@ -1,0 +1,355 @@
+
+Accessibility Technical Questions
+
+
+Who benefits from accessibility?
+
+People with disabilities benefit from accessibility.  For instance, people that may be blind or are deaf 
+should be able to access web sites using accessibility. To compare and contrast, accessibility for a
+ person visually  impaired may be a website that uses the correct color scheme. These types of sites
+ are called low-code platforms.
+
+
+How would you define inclusive and/or universal design? Can you provide an example? (does not
+ need to be web related)
+
+
+Universal design can be considered to be the design, mostly of digital products, to be, as much as
+ possible,  usable by all people, without the need to modify it. It is basically a way of designing
+ something so that the majority of people that will use it will be able to. To compare and contrast, it
+ would be like designing a walk way to be a ramp instead of stairs so that, both, people in
+ wheelchairs and people that can walk, are both able to use it.  This would leave less people out as
+ compared to if you designed it with stairs where people in wheel chairs are unable to use it.
+
+
+
+How has your approach to accessibility changed over time?
+
+As I’ve gained experience in coding, I try more and more to think of what the user may need or want. 
+ Depending on this, I try to make the database conform to this.  To compare and contrast, if I  create
+ an app for a user to create an account but don’t think of the security that the website company may
+ want, I may leave out 2 way authentication.  This would ensure the user signing up has a valid
+ phone number or email address.  An example where I’ve looked at accessibility is in a trucking
+ donations app that matches damaged trucking loads to docks that can accept a donation.  For this, 
+ I’ve modified the database model to include certain information that would be needed like the time
+ window that a driver can donate their load or a DOT number for a truck driver so a dock can verify
+ that it is a valid driver.
+
+
+Name some ways responsive/mobile first design can affect accessibility.
+
+Responsive first design can enhance accessibility because it would mean people would be able to
+ access it, not only through computers, but also through cell phones. This would enhance
+ accessibility.  To compare and contrast, if you were only able to access tv shows through your
+ television, this would inhibit people without a television to access. But because tv shows can be
+ watched through a cell  phone, accessibility is enhanced.  I’ve designed several web apps to be
+ mobile ready.  They can appear on large screen desk tops or small screen cell phones.  This is
+ generally done using Bootstrap grid which allows collapsing of grid cells.
+
+
+What are some user experience (UX) concerns to be aware of when using iconography in user
+ interfaces (UI)?
+
+It is important that the purpose of the icon being used is clear to the user. It must be intuitive and
+ obvious to understand.  To compare and contrast, if you are trying to represent a table using the
+ icon of a steak, because you are going to eat the steak on a table, this may not be obvious to the
+ user.  However, if you are able to find the icon of an actual table, this would be much more obvious.
+ One way I’ve done this is to use a floppy disk icon to represent a saving operation.  This is a pretty
+ common icon in this context.
+
+
+What assistive technologies (ATs) are you familiar with (desktop + mobile)?
+What do you feel is your skill level with these AT(s)?
+
+I’m aware of some HTML elements that are designed for visually impaired people.  It is suggested to
+ use heading tags like h1, h2, h3,  etc.  I’m familiar with these types of HTML tags. Heading tags are
+ usually larger and screen readers are designed to navigate these tags. To compare and contrast,
+ using heading tags is similar to a blind person using brail because they know how it is structured
+ and what it means.  That is similar to a screen reader reading the heading tags because it knows
+ what the heading tags mean and what their structure means.
+
+
+
+
+What are skip links?
+What benefit(s) do they provide?
+What are some of their limitations?
+
+They are links that are internal to a page and guide you to another part of the web page.  They do
+ not open a completely new web page. To compare and contrast, it is similar to getting a tour of a
+ building during an interview for a job.  They show you different parts of the internal building. I’ve
+ used these for some of my websites.  One time I used it for a runner’s website that took you to a
+ different location on the page.  The benefits they provide consist of easier navigation through the
+ page and you  may not need to scroll as much if it’s a large webpage.  Some limitations are,
+ depending on the structure and size of the web page, the link may not take  you to exactly the
+ correct line because it may not fit properly.  For example, if the web page ends and the skip link is
+ supposed to take  you to three lines before the end of the page, it won’t take you to the exact
+ location but it will be close.
+
+
+
+What are some of the tools available to test the accessibility of a website or web application?
+
+Wave for Chrome that adds a visual overlay of error icons showing issues, Tenon that generates
+ reports with code snippets for each error or Google Lighthouse. Some of the things these tests
+ provide are color contrast testing, image ALT descriptions, or lingering header tags. To compare and
+ contrast, these tools are similar to having an inspector for a restaurant to test the health and safety
+ of the food in the restaurant. Not everyone knows what accessibility asks so these tools help them
+ understand it better.
+
+
+What is WCAG?
+What are the differences between A, AA, and AAA compliance?
+WCAG are a part of the web accessibility guidelines published by the Web Accessibility Initiative of
+ the World Wide Web Consortium, the organization that establishes international standards for the
+ internet. They are guidelines on how to make web content more accessible, mostly to people with
+ disabilities. To compare and contrast, it would be similar to guidelines on new building construction
+ where there may be areas where wheelchair accessibility is necessary to have. Without these
+ guidelines, it would be more difficult for people with disabilities to use the internet because there
+ would be no guidelines on how best to create an accessible website, which would also provide less
+ motivation to do so.  Level A compliance is the minimum level, Level AA includes all Level A and AA
+ requirements, and Level AAA includes all Level A, Level AA and Level AAA compliance.
+
+
+
+
+How can using plain language benefit the accessibility of a project?
+
+
+Plain language is designed to make the reading of a website more straightforward and easy to
+ understand.  Some of the things it does are to put information in logical order or use familiar
+ language. This would allow people with some disabilities like learning disabilities to understand the
+ site better, which would enhance accessibility. To compare and contrast, the accessibility of an
+ engineering journal is very limited because it uses terms only engineers would understand.  But if
+ the writer of the journal were to make efforts to explain the articles in a language that most people
+ can understand, its accessibility would be greatly enhanced. I’ve tried to do this in parts of my
+ Master’s Thesis.  I tried to explain things in a way that people that were not engineers could still
+ understand.
+
+
+
+Describe appropriate instances to use a link, vs a generic button, vs a submit button.
+
+Links are generally used for links to other websites or pages, a generic button is generally used for
+ most things that buttons do like running some functionality.  A submit button is generally used for
+ submitting a form after the form is filled out.  To compare and contrast, a link is similar to giving
+ someone direction to a place.  A submit button is similar to signing a contract when you buy a
+ house.   A generic button is similar to buttons you push on a video game that trigger actions.  I’ve
+ used generic buttons in my apps for things like, incrementing a counter. I’ve used submit buttons for
+ submitting a filled out form.  I’ve used links for rerouting to a new website or webpage.
+
+
+Describe ways to indicate an element or component’s state that aren’t entirely reliant on visuals.
+In React you can use a useState hook that sets the state of a variable.  This is done on the React
+ component and is not always visual. You can also use a technology for managing state like Redux,
+ which is also not always visible, unless a change in state triggers a rerender of an html element.  To
+ compare and contrast, useState or Redux is similar to doing work on a car’s engine because what
+ was changed isn’t visible from the outside of the car.
+
+How can carousels be problematic for users with disabilities?
+
+
+It can cause overstimulation for people with cognitive and learning disabilities.  Because a carousel
+ has a lot of movement, showing image after image, it may be overwhelming to some with
+ disabilities.  To compare and contrast, if someone gets scared of loud noises, a fire truck with its
+ sirens will probably be disturbing to the person. They also probably wouldn’t like being at a heavy
+ metal concert. A fellow student in my second group project in the coding bootcamp implemented a
+ carousel.  I can see how it can be an over-stimulation to someone with a cognitive disability.
+
+
+How would you convince your Manager to allocate some funds to do an accessibility external audit?
+
+I might explain that accessibility has become a large topic and it may not look good to customers to
+ have a website that violates accessibility guidelines.  It also may come across as insensitive to not
+ accommodate for people’s limitations.  To compare and contrast, it may be similar to a building not
+ putting in a ramp as an alternative to a stairway for people in wheelchairs.  This might come  off as
+ insensitive.
+
+
+Describe a situation where a coworker may have been resistant to accessibility or inclusive design best practices.
+How were you able to work with them to mitigate such issues?
+What sort of strategies do you use in situations like these to help educate coworkers?
+
+
+What methods would you use to find an element’s accessible name?
+
+Using Chrome developer tools, right click on element then click Inspect.  Under the elements tab in
+ Chrome Developer Tools click the Accessibility tab, then scroll down to Computed Properties and
+ view the Name  property. To compare and contrast, the name value is found by using developer
+ tools which is similar to loosening a specific screw with a specific type of tool needed like a
+ screwdriver. Developer tools can be thought of as a toolbox for developers.  I’ve used Chrome
+ Developer tools to inspect elements or CSS styling on elements with previous websites I’ve worked
+ on. I’ve also worked a little with React Dev Tools.
+
+
+
+
+What is the accessibility tree?
+
+The accessibility tree is part  of an API and is created, mostly with screen readers in mind. It is a
+ simplified version of a web page that does not have a lot of CSS but just has the necessary wording
+ to describe the actions to take place. To compare and contrast, it can be considered similar to the
+ saying, “Just the facts.”  Because the screen reader is only concerned with the basics and does not
+ need any pretty pictures, this allows a  simpler form.
+
+
+Why are rems or ems preferable to pixels for setting type size?
+
+Rems and ems are scalable so they are responsive to the web page size. Pixels are not scalable
+ and do not change based on screen size.  To compare and contrast, rems or ems are similar to
+ measuring something as a percentage, like making the length of a piece of wood a percentage of its
+ width. Pixels would be like using an absolute measurement for  the length of a piece of wood such
+ as 5 feet.
+
+
+Why is it important to allow the viewport to be resized, and/or zoomed?
+
+
+This is important because now that there are mobile phones, there are multiple sizes of the viewport. 
+ The viewport is part of the website that is visible to the user. To allow a viewport to be resized
+ means it can adapt to different size screens, which is an important feature.  To  compare and
+ contrast, allowing a viewport to be resized would be similar to making a car accessible to someone
+ who is over 7 foot tall.  One way to do this would be allowing sufficient room for the seat to be
+ adjusted to fit the person.  One example of how I did this in my apps was through flexbox and grid
+ that specified the number of grids for each size screen.  For instance, a small screen might allow 3
+ grids in a row while a larger screen might allow 6 grids in a row.
+
+
+
+How is the title attribute exposed to assistive technologies?
+What kind of elements can title attributes be used on?
+What sort of information is appropriate for use with the title attribute?
+
+
+Th\e title attribute is not accessible on many assistive technologies because it tends to require a
+ mouse to hover over it, which is not possible on a cell or mobile device. Some ways that it can be
+ exposed are in focusable elements that have title which display their tooltips after a short pause.  In
+ HTML5, the title attribute can be used on any HTML element. One useful area to use a title attribute
+
+ is on a link to describe where the link goes because that is not always obvious when looking at the
+ link itself.  To compare and contrast, the title attribute is similar to having a stair case in a building
+ without a ramp because it is not accessible to people in wheel chairs.  Another way to compare and
+ contrast how to access a title on a mobile device is with a stair case that is covered with a wooden
+ plank that makes it possible for a wheel chair to go up it.  This is a workaround that is similar to the
+ focusable element that display the title after a short pause.
+
+
+
+
+Describe a scenario where you might need to use aria-describedby.
+
+Aria-describedby lists the id’s of the elements that describe the object. One scenario where you may 
+ want to use it would be for a screen reader.   A screen reader would use this by allowing the user to
+ hear a description of the groups of elements that perform a task. This is generally used for content
+ with plain text.  To compare and contrast, aria-describedby could be thought of as the back of a 
+ movie cover because it describes information about the movie such as who the director is, who the
+ producer is, how long the movie is, the actors in it, etc.  It has useful information about the movie
+ and what went into making it.
+
+
+What is a focus trap, or focus trapping? Describe an instance of when you’d need focus trapping,
+ and how it can be an accessibility failure if not used appropriately.
+
+
+Focus trapping is basically limiting the focus within a dialog box.  For example, pressing the tab key
+ would shift focus to sequential elements in the dialog.  You’d need focus trapping in a modal where
+ you don’t want anything outside the modal to be selected.  It can be an accessibility failure if the
+ focus goes outside of the dialog or modal somehow because it would cause confusion about what
+ parts of the site are being focused on.  To compare and contrast, it would be like looking at a
+ concert through binoculars.  You would want the focus to stay inside the arena while looking through
+ them instead of focusing outside ot the arena.
+
+
+
+Describe a situation where one might need to add or modify the focusability of an element by using
+ the tabindex attribute.
+
+The tabindex adds or removes an element from the natural tab order. One situation where you might
+ want to use it is to add focus back to an element that it was removed from in the coding.  Another
+ example would be for a custom element because it will not be focusable as it was created manually.
+ To compare and contrast, tabindex can be similar to putting in a back up quarterback in a football
+ team if the starting quarterback was injured. This is because it adds something to take the place of
+ something that was removed.
+
+
+Describe instances where you might need to use aria-live.
+What values (such as assertive or polite) might you give the attribute in different
+ situations?
+
+
+
+It is  possible for JavaScript to update part of a page instead of reloading the entire web page. This
+ kind of update may not be obvious to people with assistive technologies. ARIA live allows assistive
+ technologies to more readily be aware of these updates.  One example might be Facebook where
+ another user’s feed gets updated as it gets changed and is shown on the screen. The polite
+ attribute would be used when the update is important but not extremely important so it will only
+ sound when the user is idle. The assertive attribute would be used when the update is very
+ important and it will sound whenever that area is updated, interrupting the normal processing of the
+ web page. You might give the assertive attribute when some critical information is updated such as
+ someone sending you an email.  You might use polite when incidental information is updated like
+ another user’s feed. To compare and contrast, a polite attribute is like someone that is polite not
+ interrupting a conversation to talk.  An assertive attribute would be like someone being honest to
+ someone else about something they are offended by that the other person said because it would
+ need to be expressed.
+
+
+How would you mark-up an icon font or SVG that was for decorative purposes?
+
+For an SVG use an empty alt=’ ‘ tag. If this is not done, the screen reader will read the tag which
+ would not be a good experience for the user. To compare and contrast, not using an empty alt tag in
+ an SVG would be similar to having a t.v. commercial read all of the small text or warnings that show
+ up in small print at the bottom of the picture.  This would be annoying and an interruption.
+
+
+How is CSS pseudo content treated by screen readers?
+
+
+The pseudo content  may be completely ignored or misunderstood by screen readers.  For this
+ reason, it is a success criteria guideline to avoid using meaningful content with pseudo elements. To
+ compare and contrast, it would be like having a website that describes medications and there is an
+ error on it where the side effects description is omitted.  This is similar because it is a bug that
+ eliminates important information.  Examples of pseudo elements are :before or :after. It is suggested
+ to avoid putting useful information in these elements.
+
+
+What is the purpose of the alt attribute for images?
+The purpose of the alt attribute is to display an alternate text if an image can not be displayed. 
+
+Basically, if something goes wrong with the image, the alt text would be displayed where the image is located.  To compare and contrast, it is similar to creating a custom error message in code if an error occurs in fetching an api or for some other reason. It is what would be shown to the user if something fails. An example might be having a products name and cost in the alt text for the image of that product.  This would help identify the product.
+
+Can you describe the effect of an empty alt, and/or the lack of the attribute, on an image?
+ If the alt is empty and the image can not be rendered, the place where the image would be would be
+ blank. It would basically be a hole in the page.  To compare and contrast, it would be like having a
+ div that has a size to it being displayed on a page.  It would just show a blank.  
+
+In what instances might an empty alt or no alt be appropriate?
+
+An empty alt would be appropriate for sites that would use screen readers. Screen readers are
+ designed to express meaningful content or text to the user so if an image is only for decoration, it
+ wouldn’t be of interest to a screen reader so it should have an empty alt.To compare and contrast, if
+ you had a drug commercial with a person acting in it, it would be like showing pictures of that
+ person on the medication bottle.  It wouldn’t be necessary.  An example of a decorative image might
+ be an emoji on a webpage. This would most likely not add to the meaning of the page.
+
+How might alternative text for an image vary, depending on the context the image is used in?
+
+  If you have an alt for the image of a product, it would be good to include the product name and
+ product id.  In general, if something can be added to the alt tag that would be useful for finding
+ something on the image, it may be a good idea to include. To compare and contrast, 
+
+
+Since svgs don’t accept the alt attribute, how can one provide alternative text for
+ these graphics?
+Use a <title> and <desc> tag inside of the svg element.  Use a role = “img” and aria-label on the root
+ of the svg tag.
+
+
+Do you need to supply an image an alt attribute if used witin a figure with a figcaption?
+
+No, in this case, the alt attribute should probably be empty.
+
+
+
+
+
+I’m stopping answering the front end questions here.  I ddin’t realize I didn’t need to answer them.
