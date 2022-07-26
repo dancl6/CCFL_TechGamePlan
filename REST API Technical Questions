@@ -1,0 +1,62 @@
+REST API Technical Questions
+
+
+
+Explain what is REST and RESTFUL?
+
+REST is based on the API methods of GET, POST, PUT and DELETE. REST stands for 
+Representational State Transfer. RESTFUL is a service based on REST. RESTFUL is only used to
+ describe something that contains the REST framework.  To compare and contrast, a RESTFUL API
+ would be similar to going into an editor mode on a google doc.  You would be able to create text,
+ delete text, and modify text.  The text that is modified would be comparable to the database, the
+ google doc would be similar to the front end of what can be seen on the screen and the RESTFUL
+ API would be similar to the keyboard which transfers data from the user that is typing to the
+ database.  Some of the examples I’ve worked with are a RESTFUL APII based on Express or a
+ GraphQL API. The former returns data in its entirety and the latter returns only the desired data.
+
+
+What are the HTTP methods supported by REST?
+
+HTTP GET is a REST HTTP method that retrieves data from the back end. HTTP  POST is a REST
+ HTTP method that creates data for the back end. HTTP  PUT is an HTTP method that allows the
+ modification of data. HTTP DELETE is a REST HTTP method that deletes data from the back end.
+ HTTP PATCH is a REST HTTP method that partially updates data and should be used when you
+
+ are only modifying part of the  data.  If you replace the entire data entry, PUT should be used. To
+ compare and contrast, GET would be like a server explaining a dish to a customer, POST would be
+ like a server putting in an order to the cook, PUT would be like a server telling the cook that the
+ customer changed their minds about a dish and DELETE would be like a server throwing out a
+ gallon of milk in the kitchen because it is bad.  I’ve used all of these methods in my code except for
+ PATCH..
+
+
+What are resources in REST architecture?
+
+Generally a REST resource is something stored in a database.  It can be text, images and many 
+other things that can be stored on a computer. To compare and contrast, a REST resource in a
+ kitchen would be the food and drink. The REST resource on a Google Doc would be the text and
+ styling.   Most of the REST resources I’ve used have been text.  This text goes into the back end
+ database.
+
+
+What is the difference between AJAX and REST?
+
+
+AJAX stands for Asynchronous JavaScript and XML and is a client side technique to asynchronously  
+exchange data between a web page and a server, with minimal interruption of the loading of the
+ webpage.  The difference between AJAX and REST is AJAX is an asynchronous technique and
+ REST is not. REST is also an API method and AJAX is not.  To compare and contrast, REST would
+ be similar to the servers at a restaurant.  AJAX would be similar to a special type of tray that a
+ server uses to bring out food.  AJAX simply enhances a server’s abilities but the servers still are
+ what  make up the exchange between the kitchen and the customer.  I’ve used asynchronous API
+ calls in JavaScript but not AJAX.
+
+
+What's the different between a put and a post?
+
+A put API modifies an existing database entry. A post API creates an entirely new database entry.  
+To compare and contrast, put is similar to changing someone’s name from Matt to Kevin in the
+ database. Post is similar to creating a new entry in the database with the name of Matt.  I’ve used,
+ both, put and post extensively in my web apps.  I worked on a React App that used put to populate
+ a page with existing values from a database and allow the user to modify them. I used post to
+ create a new database entry.
