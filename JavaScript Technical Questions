@@ -820,6 +820,8 @@ Why you might want to create static class members?
 A static class member prevents new methods from being added to the class.  You cannot call a
  method based on a newly created object. You might want to create a static class member if you do 
  not want your class to be modified or if you do not want the user to have access to its methods
- using a newly created object built with the static class. To compare and contrast, this is similar to how social security numbers cannot be changed.  Their purpose is to identify an individual and if they were able to be easily changed, the ability to identify someone would be more difficult.
+ using a newly created object built with the static class. To compare and contrast, this is similar to 
+ how social security numbers cannot be changed.  Their purpose is to identify an individual and if they were 
+ able to be easily changed, the ability to identify someone would be more difficult.
 
 
